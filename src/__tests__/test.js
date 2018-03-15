@@ -1,7 +1,10 @@
-import myModule from '..';
+import parse from '..';
 
-describe('test myModule', () => {
-  it('should return 42', () => {
-    expect(myModule()).toEqual(42);
+import fs from 'fs';
+
+let data = fs.readFileSync(`${__dirname}/data.txt`, 'utf8');
+describe('test massbank-parser', () => {
+  it('should return the same json', () => {
+    expect(parse(data)).toMatchSnapshot();
   });
 });

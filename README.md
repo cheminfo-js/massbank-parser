@@ -14,10 +14,10 @@ Parse MassBank file format to a JSON.
 ## Usage
 
 ```js
-import library from 'massbank-parser';
+import parse from 'massbank-parser';
 
-const result = library(args);
-// result is ...
+const result = parse(massbankText);
+// result is an object with the parsed massbank file
 ```
 
 ## [API Documentation](https://cheminfo.github.io/massbank-parser/)
