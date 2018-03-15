@@ -1,0 +1,43 @@
+{
+  "name": "massbank-parser",
+  "version": "0.0.0",
+  "description": "Parse MassBank file format to a JSON",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "eslint": "eslint src",
+    "eslint-fix": "npm run eslint -- --fix",
+    "prepublishOnly": "rollup -c",
+    "test": "run-s testonly eslint",
+    "test-travis": "eslint src && jest --coverage && codecov",
+    "testonly": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheminfo/massbank-parser.git"
+  },
+  "keywords": [],
+  "author": "Luc Patiny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cheminfo/massbank-parser/issues"
+  },
+  "homepage": "https://github.com/cheminfo/massbank-parser#readme",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "codecov": "^3.0.0",
+    "eslint": "^4.18.2",
+    "eslint-config-cheminfo": "^1.17.2",
+    "eslint-plugin-jest": "^21.15.0",
+    "jest": "^22.4.2",
+    "npm-run-all": "^4.1.2",
+    "rollup": "^0.53.0"
+  }
+}
