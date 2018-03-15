@@ -1,6 +1,6 @@
 {
   "name": "massbank-parser",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Parse MassBank file format to a JSON",
   "main": "lib/index.js",
   "module": "src/index.js",
